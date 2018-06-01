@@ -1,0 +1,18 @@
+html
+  head
+    title  food2fork 
+    |   
+    script(type='text/javascript', src='/javascripts/jquery-3.2.1.min.js')
+    |   
+    script(type='text/javascript', src='/javascripts/client.js')
+  body
+    h1 Food2Fork App
+    |    
+    p
+      | Please enter your ingredient 
+      br
+    form(method='post', action='/recipes/submit')
+      input(type='text', name='ingredient')
+      |          
+      button(type='submit') Submit
+
