@@ -1,5 +1,7 @@
 # food2fork
 
+*You must have Node.js installed on your computer.
+
 Launch instructions:
 
 1. Download and unzip food2fork.zip. Navigate to folder in the terminal and run these commands:
