@@ -5,7 +5,7 @@ Launch instructions:
 - npm start
 At this point you should see this on your terminal:
 
-> a3@1.0.0 start /home/luv/Desktop/a3
+> food2fork@1.0.0 start ...
 > node ./bin/www
 
 2. Now point your browser to the url localhost:3000 or localhost:3000/recipes. A default load page will display showing the top 9 recipes on food2fork.com. If you prefer to get right into it you can use the url locahost:3000/reciples?ingredient= followed by the ingredients you have. (no spaces, seperated by commas). Ex. For stawberry and blueberry recipes you would enter into the url localhost:3000/recipes?ingredient=strawberry,blueberry. This will skip the default page and load recipes for you. 
