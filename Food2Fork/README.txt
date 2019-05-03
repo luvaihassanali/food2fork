@@ -1,6 +1,6 @@
 Launch instructions:
 
-1. Download and unzip luvaihassanali_a3.zip. Navigate to folder in the terminal 'luvaihassanali_a3' and run these commands:
+1. Download and unzip/clone food2fork.zip. Navigate to folder in the terminal and run these commands:
 - npm install (to install modules required by app - ignore depreceated warnings, packages unused
 - npm start
 At this point you should see this on your terminal:
