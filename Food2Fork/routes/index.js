@@ -3,7 +3,7 @@ var router = express.Router();
 var path = require('path');
 var url = require('url');
 var qstring = require('querystring');
-var http = require('http');
+var https = require('https');
 var foodDataJSON; //used to store api data into json form
 var clientData = []; //used to send data for client
 const API_KEY = 'c763b365d2f0baf8066b14f761311356';
@@ -26,8 +26,8 @@ if(query !== null) {
 } else {
   //if empty submit request is made or on loading page, load default recipes (food2fork top 9)
   var qsUrl = qstring.parse(query);
-  qsUrl.ingredient = 'default'
-  console.log("Search query received from client: ");  console.log(qsUrl);
+  qsUrl.ingredient = 'default';
+  console.log("Search query received from client: ");  
   getRecipes(qsUrl.ingredient, res);
   }
 });
@@ -57,7 +57,7 @@ function parseRecipeAndSend(recipeResponse, res) {
     router.get('/recipes/data', function(req,res,next) {
       res.json(clientData);
       console.log("To see JSON data being sent to server, uncomment line 60 of index.js");
-      //console.log("JSON Data sent to client: ");  console.log(clientData);
+      console.log("JSON Data sent to client: ");  console.log(clientData);
     })
     res.sendFile(path.resolve('views/recipes.html'));
   })
@@ -66,6 +66,7 @@ function parseRecipeAndSend(recipeResponse, res) {
 
 //get recipe api data from food2fork.com using registered key using http request
 function getRecipes(ingredient, res) {
+
 var options = '';
 if(ingredient=='default'){
    options = {
@@ -78,7 +79,10 @@ if(ingredient=='default'){
      path: '/api/search?q=' + ingredient + '&key=' + API_KEY
   }
  }
-  http.request(options, function(apiResponse){
+  https.request(options, function(apiResponse){
+    console.log("HERE2");
+    console.log(options);
+    console.log(apiResponse);
   parseRecipeAndSend(apiResponse, res);
   }).end()
 }

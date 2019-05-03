@@ -32,21 +32,21 @@ $.get('/recipes/data', function(data) {
    //create variable to append to html doc
    var pic1 = '<div class="floated_img"><a href="'+url1+'"target="_blank"><img src="'+img1+'" vspace=20px; hspace=20px; width=400px; height=290px;></a><p>'+title1+'</p></div>';
    var pic2 = '<div class="floated_img"><a href="'+url2+'"target="_blank"><img src="'+img2+'" vspace=20px; hspace=20px; width=400px; height=290px;></a><p>'+title2+'</p></div>';
-   var pic3 = '<div class="floated_img"><a href="'+url3+'"target="_blank"><img src="'+img3+'" vspace=20px; hspace=20px; width=400px; height=290px;></a><p>'+title3+'</p></div>';
+   var pic3 = '<div class="floated_img"><a href="'+url3+'"target="_blank"><img src="'+img3+'" vspace=20px; hspace=20px; width=400px; height=290px;></a><p>'+title3+'</p></div><br>';
    var pic4 = '<div class="floated_img"><a href="'+url4+'"target="_blank"><img src="'+img4+'" vspace=20px; hspace=20px; width=400px; height=290px;></a><p>'+title4+'</p></div>';
    var pic5 = '<div class="floated_img"><a href="'+url5+'"target="_blank"><img src="'+img5+'" vspace=20px; hspace=20px; width=400px; height=290px;></a><p>'+title5+'</p></div>';
-   var pic6 = '<div class="floated_img"><a href="'+url6+'"target="_blank"><img src="'+img6+'" vspace=20px; hspace=20px; width=400px; height=290px;></a><p>'+title6+'</p></div>';
+   var pic6 = '<div class="floated_img"><a href="'+url6+'"target="_blank"><img src="'+img6+'" vspace=20px; hspace=20px; width=400px; height=290px;></a><p>'+title6+'</p></div><br>';
    var pic7 = '<div class="floated_img"><a href="'+url7+'"target="_blank"><img src="'+img7+'" vspace=20px; hspace=20px; width=400px; height=290px;></a><p>'+title7+'</p></div>';
    var pic8 = '<div class="floated_img"><a href="'+url8+'"target="_blank"><img src="'+img8+'" vspace=20px; hspace=20px; width=400px; height=290px;></a><p>'+title8+'</p></div>';
    var pic9 = '<div class="floated_img"><a href="'+url9+'"target="_blank"><img src="'+img9+'" vspace=20px; hspace=20px; width=400px; height=290px;></a><p>'+title9+'</p></div>';
    //appepnd pictures to proper part of recipes.html to update page with new pictures and titles
-   $('p1').append(pic1);
-   $('p2').append(pic2);
-   $('p3').append(pic3);
-   $('p4').append(pic4);
-   $('p5').append(pic5);
-   $('p6').append(pic6);
-   $('p7').append(pic7);
-   $('p8').append(pic8);
-   $('p9').append(pic9);
+   $('#picDiv').append(pic1);
+   $('#picDiv').append(pic2);
+   $('#picDiv').append(pic3);
+   $('#picDiv').append(pic4);
+   $('#picDiv').append(pic5);
+   $('#picDiv').append(pic6);
+   $('#picDiv').append(pic7);
+   $('#picDiv').append(pic8);
+   $('#picDiv').append(pic9);
 });
