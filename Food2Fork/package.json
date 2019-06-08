@@ -6,10 +6,11 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "~1.18.2",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.9",
-    "express": "^4.16.4",
+    "body-parser": "~1.19.0",
+    "clean-css": ">=4.1.11",
+    "cookie-parser": "^1.4.4",
+    "debug": "~4.1.1",
+    "express": "^4.17.1",
     "http": "0.0.0",
     "https": "^1.0.0",
     "jade": "~1.11.0",
@@ -17,7 +18,8 @@
     "morgan": "^1.9.1",
     "querystring": "^0.2.0",
     "require": "^2.4.20",
-    "serve-favicon": "~2.4.5"
+    "serve-favicon": "~2.5.0",
+    "uglify-js": "^3.6.0"
   },
   "main": "app.js",
   "devDependencies": {},
