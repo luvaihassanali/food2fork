@@ -19,7 +19,8 @@
     "querystring": "^0.2.0",
     "require": "^2.4.20",
     "serve-favicon": "~2.5.0",
-    "uglify-js": "^3.6.0"
+    "uglify-js": "^3.6.0",
+    "constantinople": ">=3.1.1"
   },
   "main": "app.js",
   "devDependencies": {},
